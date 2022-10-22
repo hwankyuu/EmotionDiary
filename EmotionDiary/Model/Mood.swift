@@ -14,6 +14,7 @@ enum Mood: String, Codable, CaseIterable {
     case okay
     case good
     case great
+    case sad
     
     
     var imageName: String {
@@ -23,6 +24,8 @@ enum Mood: String, Codable, CaseIterable {
         case .okay: return "cloud.fill"
         case .good: return "cloud.sun.fill"
         case .great: return "sun.max.fill"
+        case .sad: return "humidity"
+        
         }
     }
     
@@ -33,6 +36,7 @@ enum Mood: String, Codable, CaseIterable {
         case .okay: return "Okay"
         case .good: return "Good"
         case .great: return "Great"
+        case .sad: return "sad"
         }
     }
     
